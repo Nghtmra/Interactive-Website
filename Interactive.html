@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive School Kiosk</title>
+    <style>
+        body {
+            font-family: Lato, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffd900; /* Yellow Header */
+            color: rgb(104, 28, 5);
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #e9ecef; /* Light Gray Navigation */
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 1em;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000333;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0400ff; /* Blue on hover */
+            color: white;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        section {
+            background-color: white;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+        }
+
+        .animated-text {
+            font-size: 2em;
+            animation: typing 3s steps(30, end), blink 0.5s infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        footer {
+            background-color: #000333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Basic styling for the map */
+        #map {
+            height: 400px; /* Set the height of the map */
+            width: 100%; /* Full width */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Bonnyrigg HS</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://bonnyrigg-h.schools.nsw.gov.au/news.html">Announcements</a></li>
+            <li><a href="https://bonnyrigg-h.schools.nsw.gov.au/events.html">Events</a></li>
+            <li><a href="https://bonnyrigg-h.schools.nsw.gov.au/contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Latest Announcements</h2>
+            <p class="animated-text">No new updates</p>
+        </section>
+
+        <section>
+            <h2>Upcoming Events</h2>
+            <p>Stay tuned for exciting events happening at our school!</p>
+        </section>
+
+        <section>
+            <h2>Contact  Information</h2>
+            <p>For any inquiries, please contact us at <u><a href="https://bonnyrigg-h.schools.nsw.gov.au">Bonnyrigg High School</a></u></p>
+        </section>
+
+        <section>
+            <h2>Our Location</h2>
+            <div id="map">
+                <!-- Embed Google Map here -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8407.024379717!2d150.8820052530733!3d-33.893528317122204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b1294214110609b%3A0x6c613a96447abcb4!2sBonnyrigg%20High%20School!5e1!3m2!1sen!2sau!4v1743997125467!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </iframe>
+            </div>
+        </section>
+
+        <img src="bonnyrigg.jfif" width="900" height="600" alt="School View">
+    </main>
+</body>
+</html>
